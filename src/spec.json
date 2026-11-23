@@ -160,25 +160,30 @@
       "metrics": [
         {
           "label": "Voci inserite",
-          "value": "4"
+          "value": "6"
         },
         {
-          "label": "Totale previsto",
-          "value": "€ 36.700"
+          "label": "Totale entrate previste",
+          "value": "€ 36.000"
         },
         {
-          "label": "Voci da controllare",
-          "value": "2"
+          "label": "Totale uscite previste",
+          "value": "€ 24.700"
+        },
+        {
+          "label": "Saldo previsto",
+          "value": "€ 11.300"
         }
       ],
       "columns": [
         "Voce",
         "Tipo",
-        "Fornitore",
+        "Descrizione",
         "Importo",
         "Capitolo",
         "Scadenza",
-        "Stato"
+        "Stato",
+        "Parte di bilancio"
       ],
       "rows": [
         [
@@ -188,7 +193,8 @@
           "€ 12.000",
           "Cap. 204",
           "30/10/2026",
-          "Da verificare"
+          "Da verificare",
+          "Da classificare"
         ],
         [
           "Materiali per ufficio",
@@ -197,7 +203,8 @@
           "€ 4.200",
           "Cap. 101",
           "05/11/2026",
-          "Controllo da fare"
+          "Controllo da fare",
+          "Da classificare"
         ],
         [
           "Manutenzione",
@@ -206,7 +213,8 @@
           "€ 8.500",
           "Cap. 305",
           "12/11/2026",
-          "Da verificare"
+          "Da verificare",
+          "Da classificare"
         ],
         [
           "Entrate previste",
@@ -215,13 +223,34 @@
           "€ 12.000",
           "Cap. 410",
           "30/11/2026",
-          "Pronto"
+          "Pronto",
+          "Da classificare"
+        ],
+        [
+          "Trasferimento regionale",
+          "Entrata",
+          "Contributo per servizi",
+          "€ 18.000",
+          "Cap. 410",
+          "30/11/2026",
+          "Da verificare",
+          "Da classificare"
+        ],
+        [
+          "Proventi da servizi",
+          "Entrata",
+          "Tariffe e rimborsi",
+          "€ 6.000",
+          "Cap. 420",
+          "15/12/2026",
+          "Da verificare",
+          "Da classificare"
         ]
       ],
       "form": [
         "Voce",
         "Tipo",
-        "Fornitore",
+        "Descrizione",
         "Importo",
         "Capitolo",
         "Scadenza",
@@ -232,5 +261,15 @@
   "theme": {
     "palette": "ardesia",
     "fonts": "istituzionale"
-  }
+  },
+  "custom": [
+    {
+      "name": "VerificaEquilibriBilancio",
+      "title": "Verifica dimostrativa degli equilibri",
+      "description": "Classificazione interattiva delle previsioni e controlli preliminari sui saldi.",
+      "role": "section",
+      "pageId": "bilancio-previsione",
+      "position": "top"
+    }
+  ]
 }
