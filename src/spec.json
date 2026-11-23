@@ -1,0 +1,236 @@
+{
+  "title": "Preparazione del bilancio di previsione",
+  "description": "Raccogli pochi dati, controlla le scadenze e prepara una bozza del bilancio di previsione. La dashboard mostra le pratiche da seguire e il registro permette di cercarle e filtrare per stato.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "riepilogo",
+      "title": "Riepilogo",
+      "description": "Una vista rapida su impegni, liquidazioni e controlli da fare. Gli importi sono inventati e servono solo per il prototipo.",
+      "metrics": [
+        {
+          "label": "Impegni del mese",
+          "value": "€ 38.450"
+        },
+        {
+          "label": "Fatture da liquidare",
+          "value": "6"
+        },
+        {
+          "label": "Importo pagato del mese",
+          "value": "€ 21.800"
+        },
+        {
+          "label": "Fatture in scadenza",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Pratica",
+        "Tipo",
+        "Importo",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Atto 014",
+          "Impegno",
+          "€ 4.200",
+          "18/10/2026",
+          "Controllo da fare"
+        ],
+        [
+          "Atto 021",
+          "Fattura",
+          "€ 2.750",
+          "20/10/2026",
+          "In scadenza"
+        ],
+        [
+          "Atto 027",
+          "Fattura",
+          "€ 1.180",
+          "24/10/2026",
+          "Da liquidare"
+        ],
+        [
+          "Atto 032",
+          "Previsione",
+          "€ 12.000",
+          "30/10/2026",
+          "Bozza da completare"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "registro-pratiche",
+      "title": "Registro pratiche",
+      "description": "Cerca una pratica o filtrala per stato. Il modulo serve per aggiungere una pratica e tenere insieme dati, scadenza e controlli.",
+      "metrics": [],
+      "columns": [
+        "Atto",
+        "Tipo",
+        "Fornitore",
+        "Importo",
+        "Capitolo",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Atto 014",
+          "Impegno",
+          "Lumo Forniture",
+          "€ 4.200",
+          "Cap. 101",
+          "18/10/2026",
+          "Controllo da fare"
+        ],
+        [
+          "Atto 021",
+          "Fattura",
+          "Vela Servizi",
+          "€ 2.750",
+          "Cap. 204",
+          "20/10/2026",
+          "In scadenza"
+        ],
+        [
+          "Atto 027",
+          "Fattura",
+          "Nubi Carta",
+          "€ 1.180",
+          "Cap. 101",
+          "24/10/2026",
+          "Da liquidare"
+        ],
+        [
+          "Atto 032",
+          "Previsione",
+          "Lumo Forniture",
+          "€ 12.000",
+          "Cap. 305",
+          "30/10/2026",
+          "Bozza da completare"
+        ],
+        [
+          "Atto 035",
+          "Fattura",
+          "Vela Servizi",
+          "€ 3.640",
+          "Cap. 204",
+          "05/11/2026",
+          "In controllo"
+        ],
+        [
+          "Atto 039",
+          "Impegno",
+          "Nubi Carta",
+          "€ 860",
+          "Cap. 101",
+          "08/11/2026",
+          "Pronto"
+        ],
+        [
+          "Atto 043",
+          "Previsione",
+          "Lumo Forniture",
+          "€ 8.500",
+          "Cap. 305",
+          "12/11/2026",
+          "Bozza da completare"
+        ]
+      ],
+      "form": [
+        "Atto",
+        "Tipo",
+        "Fornitore",
+        "Importo",
+        "Capitolo",
+        "Scadenza",
+        "Stato"
+      ]
+    },
+    {
+      "id": "bilancio-previsione",
+      "title": "Bilancio di previsione",
+      "description": "Inserisci i pochi dati disponibili per preparare una bozza. Prima di usarla, verifica gli importi e i capitoli: il prototipo non sostituisce i controlli dell’ufficio.",
+      "metrics": [
+        {
+          "label": "Voci inserite",
+          "value": "4"
+        },
+        {
+          "label": "Totale previsto",
+          "value": "€ 36.700"
+        },
+        {
+          "label": "Voci da controllare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Voce",
+        "Tipo",
+        "Fornitore",
+        "Importo",
+        "Capitolo",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Servizi di supporto",
+          "Spesa",
+          "Vela Servizi",
+          "€ 12.000",
+          "Cap. 204",
+          "30/10/2026",
+          "Da verificare"
+        ],
+        [
+          "Materiali per ufficio",
+          "Spesa",
+          "Nubi Carta",
+          "€ 4.200",
+          "Cap. 101",
+          "05/11/2026",
+          "Controllo da fare"
+        ],
+        [
+          "Manutenzione",
+          "Spesa",
+          "Lumo Forniture",
+          "€ 8.500",
+          "Cap. 305",
+          "12/11/2026",
+          "Da verificare"
+        ],
+        [
+          "Entrate previste",
+          "Entrata",
+          "Lumo Forniture",
+          "€ 12.000",
+          "Cap. 410",
+          "30/11/2026",
+          "Pronto"
+        ]
+      ],
+      "form": [
+        "Voce",
+        "Tipo",
+        "Fornitore",
+        "Importo",
+        "Capitolo",
+        "Scadenza",
+        "Stato"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "ardesia",
+    "fonts": "istituzionale"
+  }
+}
